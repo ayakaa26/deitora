@@ -1,0 +1,219 @@
+@charset "UTF-8"
+
+/* 共通 */
+html {
+  font-size: 100%;
+  width: 100%;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+h1 {
+  color: black;
+  font-size: 16px;
+}
+h2 {
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  padding: 40px 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: gray;
+}
+
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+/* ヘッダー */
+header {
+  height: 50px;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav {
+  display: flex;
+  font-size: 15px;
+}
+.main-nav li {
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+header  h1 {
+  font-size: 20px;
+  padding: 0 60px;
+  line-height: 50px;
+}
+
+/* デイトラとは */
+#about {
+  height: 400px;
+}
+.about-wrapper {
+  display: flex;
+}
+.about-wrapper img {
+  width: 50%;
+  height: 300px;
+  padding: 25px;
+}
+.about-wrapper p {
+  width: 50%;
+  padding: 25px;
+}
+
+/* コース一覧 */
+.course {
+  height: 300px;
+}
+.lesson-wrapper {
+  display: flex;
+}
+.lesson {
+  padding: 20px;
+}
+.lesson img {
+  width: 100%;
+  height: 100%;
+}
+
+/* お問い合わせ */
+#contact {
+  text-align: center;
+  height: 250px;
+}
+#email {
+  border:1px solid rgb(196, 193, 193);
+  border-radius: 30px;
+  width: 400px;
+  padding: 5px;
+  display: block;
+  margin: 5px auto;
+  margin-bottom: 15px;
+}
+#login-btn {
+  background-color: sandybrown;
+  color: white;
+  padding: 10px;
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 2px 2px rgb(158, 152, 152);
+}
+#login-btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+/* フッター */
+footer {
+  text-align: right;
+  padding: 26px 0;
+}
+footer .container {
+  border-top: 1px solid rgb(196, 193, 193);
+}
+
+footer p {
+  font-size: 16px;
+}
+
+@media (max-width:600px) {
+  /* 共通 */
+  h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+  p {
+    font-size: 13px;
+  }
+
+
+  /* ヘッダー */
+  header {
+    height: 100px;
+  }
+  .main-header {
+    flex-direction: column;
+  }
+  .main-nav {
+    display: flex;
+    font-size: 13px;
+  }
+
+
+  /* デイトラとは */
+  #about {
+    height: 490px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-wrapper img {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  .about-wrapper p {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  /* コース一覧 */
+  .lesson-wrapper {
+    flex-direction: column;
+  }
+  .lesson {
+    padding: 20px;
+  }
+  .lesson p {
+    text-align: center;
+  }
+  .lesson img {
+    width: 100%;
+    height: 100%;
+  }
+  /* お問い合わせ */
+  #contact {
+    height: 200px;
+  }
+  #email {
+    width: 340px;
+  }
+  #login-btn {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* フッター */
+  footer {
+    text-align: center;
+  }
+  footer p {
+    font-size: 13px;
+  }
+
+
+
+}
